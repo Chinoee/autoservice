@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | PROAutoService</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">PROAuto</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services-page">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <p class="page-subtitle">Полный спектр услуг по ремонту и обслуживанию автомобилей</p>
+
+            <!-- Фильтр услуг -->
+        <div class="services-filter">
+            <button class="filter-btn active" data-filter="all">Все услуги автосервиса</button>
+            <button class="filter-btn" data-filter="diagnostics">Диагностика</button>
+            <button class="filter-btn" data-filter="maintenance">Техобслуживание</button>
+            <button class="filter-btn" data-filter="repair">Ремонт</button>
+        </div>
+
+            <!-- Список услуг -->
+            <div class="services-container">
+                <div class="service-card" data-category="maintenance">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Замена масла и фильтров</h3>
+                    <p>Полная замена моторного масла, масляного, воздушного и салонного фильтров</p>
+                    <div class="service-price">от 1500 ₽</div>
+                    <div class="service-time">⏱ 1 час</div>
+                </div>
+
+                <div class="service-card" data-category="repair">
+                    <div class="service-icon">⚡</div>
+                    <h3>Диагностика электроники</h3>
+                    <p>Компьютерная диагностика, ремонт проводки, замена датчиков</p>
+                    <div class="service-price">от 2000 ₽</div>
+                    <div class="service-time">⏱ 2-3 часа</div>
+                </div>
+
+                <div class="service-card" data-category="body">
+                    <div class="service-icon">🎨</div>
+                    <h3>Кузовной ремонт</h3>
+                    <p>Устранение вмятин, рихтовка, покраска, полировка кузова</p>
+                    <div class="service-price">от 5000 ₽</div>
+                    <div class="service-time">⏱ 1-2 дня</div>
+                </div>
+
+                <div class="service-card" data-category="maintenance">
+                    <div class="service-icon">🛞</div>
+                    <h3>Шиномонтаж</h3>
+                    <p>Сезонная замена шин, балансировка, ремонт проколов</p>
+                    <div class="service-price">от 800 ₽</div>
+                    <div class="service-time">⏱ 1 час</div>
+                </div>
+
+                <div class="service-card" data-category="repair">
+                    <div class="service-icon">🔧</div>
+                    <h3>Ремонт двигателя</h3>
+                    <p>Капитальный ремонт ДВС, замена ГРМ, ремонт головки блока</p>
+                    <div class="service-price">от 15000 ₽</div>
+                    <div class="service-time">⏱ 2-5 дней</div>
+                </div>
+
+                <div class="service-card" data-category="body">
+                    <div class="service-icon">🚗</div>
+                    <h3>Детейлинг</h3>
+                    <p>Полная химчистка салона, полировка кузова, защитное покрытие</p>
+                    <div class="service-price">от 7000 ₽</div>
+                    <div class="service-time">⏱ 1 день</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
